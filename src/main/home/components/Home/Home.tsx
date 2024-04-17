@@ -1,10 +1,10 @@
 import React from "react";
-import Form from "./Form.tsx";
+import MyForm from "./MyForm.tsx";
 
 export default function Home () {
     return (
         <>
-            <Form />
+            <MyForm />
         </>
     );
 }

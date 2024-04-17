@@ -1,11 +1,11 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
-import './Form.css';
+import './MyForm.css';
 
-function Form() {
+function MyForm() {
     return (
-        <form className='Form'>
+        <form className='MyForm'>
             <TextField
                 label="Name"
                 variant="outlined"
@@ -29,4 +29,4 @@ function Form() {
     );
 }
 
-export default Form;
+export default MyForm;
