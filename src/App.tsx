@@ -12,14 +12,18 @@ function App() {
             <HashRouter>
                 <Routes>
                     <Route path="/" element={<Navigate to="home" />}></Route>
-                    <Route path="/home" element={<Home />}></Route>
+                    <Route path="/home/*" element={
+                        <Routes>
+                            <Route path="/" element={<Home />}></Route>
+                            <Route path="/chart" element={<Chart />}></Route>
+                        </Routes>
+                    }></Route>
                     <Route path="/*" element={
                         <Routes>
                             <Route path="myfund" element={<Fund />}></Route>
                         </Routes>
                     }
                     ></Route>
-                    <Route path="/chart" element={<Chart />}></Route>
                 </Routes>
             </HashRouter>
         </ConfigProvider>
