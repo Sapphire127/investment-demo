@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Home from './main/home/components/Home/Home.tsx';
 import Fund from './main/fund/components/Fund/Fund.tsx';
+import Chart from './main/chart/components/Chart/Chart.tsx';
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
 
@@ -18,6 +19,7 @@ function App() {
                         </Routes>
                     }
                     ></Route>
+                    <Route path="/chart" element={<Chart />}></Route>
                 </Routes>
             </HashRouter>
         </ConfigProvider>
